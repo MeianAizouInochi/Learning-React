@@ -1,1 +1,45 @@
 Learning from Udemy Business from IBM.
+
+Step 1:
+Refresh knowledge of JS.
+    It can be executed in many environments - web browser, outside as server-side, Mobile via embedded Websites ---Versatile.
+    2 ways to use js in project - within the script tags as inline js code ------------------ <script>code goes here</script>
+    or we can create a seperate js file where we put our javascript code, then get it inside our html file using the following ---------------- <script src="file.js"></script>
+
+
+    If we want our js code to execute after the rendering is done, lets assume because it needs to interact with a html element or such, then there are 2 ways to do this:
+    1. we can put the "defer" keyword in the script tag beside the src, this will only execute the js code once the full html rendering is done.
+    2. we can place the script tag inside the body tag at the end of the content inside it.
+
+    React project requires a build process to run on the browser. 
+
+
+    Adding the type="module" inside the script tag beside the src attribute, will make the js file act as a module, which means the js file which is the src here, will be able to
+    import code from other js files.
+
+    In js, the import statement requires the whole name of the file with extension, while react doesnt require us to mention the extension.
+
+
+    for export there are 2 different ways to export data out of a js file.
+     1 with default keyword and the other without.
+
+     export default <Data>;
+
+     or export let a = "b";
+
+     when import for the above scenarios:
+
+     import <somename> from "path";
+
+     import {a} from "path";
+
+     respectively.
+
+     A file which contains default export, can contain more normal exports, but cannot have more default exports.
+
+     When we import the data, we can assign aliases to the data we are importing using "as" keyword.
+      we can import all the things from a file, by grouping them into a js object.
+      Example: import * as <somename> from "path";
+      Then we can access the data from the <somename> using the dot notation.
+
+      
